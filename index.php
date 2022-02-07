@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
+
     <title>Hokage 2.0</title>
   </head>
   <body>
