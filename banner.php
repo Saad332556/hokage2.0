@@ -1,0 +1,1 @@
+<img src="./img/hokages.png" alt="hokages" class="img-fluid">
