@@ -1,0 +1,8 @@
+/* ctrl + shift + r to reload page and see new style. */
+#footer {
+    min-height: 4em;
+    background-color: rgb(122, 95, 95);
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}

@@ -23,7 +23,7 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid">
+      <section class="container-fluid px-0">
         <div class="row">
           <div class="col-12">
             <?php include("./navbar.php"); ?>
@@ -33,11 +33,17 @@
       <section class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <?php include("./content.php"); ?>
+          <?php 
+            if (isset($_GET["content"])) {
+              include("./" . $_GET["content"] . ".php");
+            } else {
+              include("./home.php");
+            }
+          ?>
           </div>
         </div>
       </section>
-      <section class="container-fluid">
+      <section class="container-fluid px-0 fixed-bottom">
         <div class="row">
           <div class="col-12">
             <?php include("./footer.php"); ?>
