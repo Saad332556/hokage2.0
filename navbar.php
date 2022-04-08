@@ -1,7 +1,7 @@
 <?php
     $active = (isset($_GET["content"]))? $_GET["content"]: "";
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.php?content=home">Hokage 2.0</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +27,14 @@
             <li><a class="dropdown-item <?php echo ($active == "complaint")? "active": "" ?> ?>" href="./index.php?content=complaint">complaint</a></li>
             <li><a class="dropdown-item <?php echo ($active == "contact")? "active": "" ?> ?>" href="./index.php?content=contact">contact</a></li>
           </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link <?php echo ($active == "register")? "active": "" ?>" href="./index.php?content=register">register</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link <?php echo ($active == "login")? "active": "" ?>" href="./index.php?content=login">login</a>
         </li>
       </ul>
     </div>
